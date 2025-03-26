@@ -1,0 +1,90 @@
+<!-- Semantic tags describe meaning to browser and developer
+Use them to layout our website
+header - header 
+nav - nav bar
+section - describes copy text or home page
+artciel tag for blogs for posts in blog
+aside - side bar content
+footer - copyright, privacy policy etc
+meta - used in head area. Browsers look at keywords definition
+to know what to put in search engine -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+    <meta name="description" content="Awesome blog by Kaydonius the Programmer">
+    <meta name="keywords" content="web design blog, web dev blog, Kaydonius Programming"> 
+    <style type="text/css">
+        #main-header{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        #main-footer{
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>My Website</h1>
+    </header>
+
+    <a href="index.html">Go to index</a>
+    
+    <section>
+        <article class="post">
+            <h3>Blog Post One</h3>
+            <small>Posted by Kaydon on March 26</small>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Numquam placeat ullam cumque dignissimos dolores, 
+                dicta voluptatibus tempora necessitatibus repellendus 
+                vero fugiat, beatae sed quod molestiae 
+                eius dolorum quae at deleniti.</p>
+                <a href="post.html">Read More</a>
+        </article>
+
+        <article class="post">
+            <h3>Blog Post Two</h3>
+            <small>Posted by Kaydon on March 26</small>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Numquam placeat ullam cumque dignissimos dolores, 
+                dicta voluptatibus tempora necessitatibus repellendus 
+                vero fugiat, beatae sed quod molestiae 
+                eius dolorum quae at deleniti.</p>
+                <a href="post.html">Read More</a>
+        </article>
+
+        <article class="post">
+            <h3>Blog Post Three</h3>
+            <small>Posted by Kaydon on March 26</small>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Numquam placeat ullam cumque dignissimos dolores, 
+                dicta voluptatibus tempora necessitatibus repellendus 
+                vero fugiat, beatae sed quod molestiae 
+                eius dolorum quae at deleniti.</p>
+                <a href="post.html">Read More</a>
+        </article>
+    </section>
+
+    <aside>
+        <h3>Categories
+            <nav>
+                <ul>
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                </ul>
+            </nav>
+        </h3>
+    </aside>
+    
+    <footer id="main-footer">
+        <p>Copyright &copy; 2025, My Website</p>
+    </footer>
+</body>
+</html>

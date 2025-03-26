@@ -1,0 +1,213 @@
+<!-- HTML stands for hyper text markup language
+NOT a programming language
+Markup lang for creating web pages/documents 
+Building blocks of the web -->
+
+<!-- Creating a file:
+does NOT need a server
+files must end in .html
+runs in a web browser (chrome, firefox, etc) -->
+
+<!-- Why does the home page need to be index.html?
+By default, the homepage calls index file.
+If you call it something else, you have to specify the file name in the URL.
+EX: http://wwww.something.com loads the index.html file
+http://www.something.com/about.html would load a file called about.html -->
+
+
+<!-- HTML TAGS:
+Tags are the building blocks of any webpage. 
+Different tags format the way that info and text are displayed.
+Normally come in pairs (start tag and end tag)
+End tag is usually the same but with a forward slash
+Some tags close themselves (Remnant of XHTML)
+EX: <tagname>content</tagname>
+<h1>About us</h1>
+<p>This is a paragraph</p>
+<br/> (self closing)
+<br> (fine in html5) -->
+
+<!-- HTML PAGE STRUCTURE:
+Everything is surrounded by html Tags
+inside that we have head and body areas
+head has page title, links to css/js files, metadata, etc
+not actually on pages
+in body, we have markup that displays in browser -->
+
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>HTML Cheat Sheet</title>
+    </head>
+    <body>
+        <a href="blog.html">Go to blog</a>
+        <hr>
+        <!-- Headings -->
+         <h1>Heading One</h1>
+         <h2>Heading Two</h2>
+         <h3>Heading Three</h3>
+         <h4>Heading Four</h4>
+         <h5>Heading Five</h5>
+         <h6>Heading Six</h6>
+
+         <!-- Paragraph -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Libero adipisci, quas 
+            quasi nam <strong>veritatis eligendi perspiciatis</strong> 
+            blanditiis autem pariatur quibusdam id, 
+            atque tempore. <em>Nulla dolorem, sit itaque 
+            inventore velit a?</em>
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Neque vitae nostrum accusamus <a href="http://google.com" target="_blank">necessitatibus repellat in
+            pariatur</a> similique? Nesciunt eligendi veritatis, debitis 
+            quam et adipisci dolore nemo, nisi consequuntur nulla magni?
+          </p>
+          <!-- Lists -->
+           <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+           </ul>
+           <ol>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+           </ol>
+
+           <!-- Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kaydon Skinner</td>
+                        <td>skinnerkaydon@gmail.com</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>Atani Nelson</td>
+                        <td>atanin@gmail.com</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>Blake Garcia</td>
+                        <td>flakeblakes@gmail.com</td>
+                        <td>21.5</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <hr>
+            <br>
+
+            <!-- Forms -->
+             <form action="process.php" method="POST">
+                <div>
+                    <label>First Name</label>
+                    <input type="text" name="firstName"
+                    placeholder="Enter first name">
+                </div>
+                <br>
+                <div> 
+                    <label>Last Name</label>
+                    <input type="text" name="lastName">
+                </div>
+                <br>        
+                <div> 
+                    <label>Email</label>
+                    <input type="email" name="email">
+                </div>
+                <br>
+                <div> 
+                    <label>Message</label>
+                    <textarea name="message"></textarea>
+                </div>
+                <br>
+                <div> 
+                    <label>Gender</label>
+                    <select name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other
+                        </option>
+                    </select>
+                </div>
+                <br>
+                    <div>
+                        <label>Age:</label>
+                        <input type="number" name="age"
+                        value="21">
+                    </div>
+                    <br>
+                    <div>
+                        <label Birthday:></label>
+                        <input type="date" name="birthday"
+                        >
+                    </div>
+                    <br>
+                    <input type="submit" name="submit"
+                    value="Submit">
+             </form>
+
+             <!-- Button -->
+              <button>Click Me</button>
+
+              <br>
+
+              <!-- Image -->
+            <a href="img/sample.jpg">
+              <img src="img/sample.jpg" alt="My Sample Image"
+              width="200">
+            </a> 
+
+            <!-- Quotations -->
+            <blockquote cite="http://traversymedia.com">
+                Lorem ipsum dolor sit amet, consectetur 
+                adipisicing elit. Exercitationem, eaque 
+                consectetur eligendi error nam excepturi 
+                quo facilis? Officiis magnam ipsam, 
+                similique ullam repellat voluptatem 
+                unde eaque possimus, pariatur, consequuntur 
+                dolores?
+            </blockquote>
+
+            <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+
+            <p><cite>HTML crash course</cite> by Brad Travery</p>
+    </body>
+</html>
+
+<!-- INLINE VS BLOCK LEVEL ELEMENTS
+Tags can either be inline or block level ELEMENTS
+Inline elements:
+- Do not start on a new line
+- Take only necessary width
+
+Block elements:
+- Start on a new line
+- Take full width available
+
+Block level:
+<div>, <h1>-<h6>, <p>, <form>
+Inline Level: 
+<span>, <img>, <a> -->
+
+
+<!-- All tags can have an attribute(s). THey provide more info about an element
+ EX: href opens up a link to another website. Target is another attribute. Attributes
+ are always placed at the start tag and alsoway formatted as key/value pairs.
+ The key is the beginning and the value is the thing in quotes.
+ EX: <tagname
+ attributename="attributevalue">content
+</tagname>-->
